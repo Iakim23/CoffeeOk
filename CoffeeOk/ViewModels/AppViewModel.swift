@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum UserRole {
+    case coffeeShop
+    case coffeeLover
+}
+
 enum Screen: Equatable {
     case posts
     case users
@@ -41,6 +46,14 @@ class AppViewModel: ObservableObject {
     @Published var selectedUserId: String?
     @Published var selectedShopId: String?
     @Published var selectedPostId: String?
+
+    // Состояние для выбора роли
+    @Published var showRoleSelection = true
+    @Published var showRegistration = false
+    @Published var showComingSoon = false
+    @Published var showCoffeeShopRegistration = false
+    @Published var showCoffeeShopMain = false
+    @Published var selectedRole: UserRole?
     
     func authenticate() {
         isAuthenticated = true

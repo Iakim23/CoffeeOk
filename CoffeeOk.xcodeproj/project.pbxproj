@@ -26,6 +26,12 @@
 		E487C69E2EF4F87800F3EEE9 /* RegistrationView 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E487C69D2EF4F87800F3EEE9 /* RegistrationView 2.swift */; };
 		B1000054 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000055 /* Comment.swift */; };
 		B1000056 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000057 /* CommentsView.swift */; };
+		B100005A /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000058 /* RoleSelectionView.swift */; };
+		B100005B /* ComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000059 /* ComingSoonView.swift */; };
+		B100005D /* CoffeeShopRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100005C /* CoffeeShopRegistrationView.swift */; };
+		B100005G /* CoffeeShopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100005E /* CoffeeShopMainView.swift */; };
+		B100005H /* CoffeeShopNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100005F /* CoffeeShopNavBar.swift */; };
+		B100005I /* CoffeeShopShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100005J /* CoffeeShopShowcaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		E487C69D2EF4F87800F3EEE9 /* RegistrationView 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegistrationView 2.swift"; sourceTree = "<group>"; };
 		B1000055 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B1000057 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		B1000058 /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
+		B1000059 /* ComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonView.swift; sourceTree = "<group>"; };
+		B100005C /* CoffeeShopRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopRegistrationView.swift; sourceTree = "<group>"; };
+		B100005E /* CoffeeShopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopMainView.swift; sourceTree = "<group>"; };
+		B100005F /* CoffeeShopNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopNavBar.swift; sourceTree = "<group>"; };
+		B100005J /* CoffeeShopShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopShowcaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,12 @@
 				B1000016 /* SubscriptionsView.swift */,
 				E487C69D2EF4F87800F3EEE9 /* RegistrationView 2.swift */,
 				B1000057 /* CommentsView.swift */,
+				B1000058 /* RoleSelectionView.swift */,
+				B1000059 /* ComingSoonView.swift */,
+				B100005C /* CoffeeShopRegistrationView.swift */,
+				B100005E /* CoffeeShopMainView.swift */,
+				B100005F /* CoffeeShopNavBar.swift */,
+				B100005J /* CoffeeShopShowcaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +246,12 @@
 				B1000029 /* ColorExtension.swift in Sources */,
 				B1000054 /* Comment.swift in Sources */,
 				B1000056 /* CommentsView.swift in Sources */,
+				B100005A /* RoleSelectionView.swift in Sources */,
+				B100005B /* ComingSoonView.swift in Sources */,
+				B100005D /* CoffeeShopRegistrationView.swift in Sources */,
+				B100005G /* CoffeeShopMainView.swift in Sources */,
+				B100005H /* CoffeeShopNavBar.swift in Sources */,
+				B100005I /* CoffeeShopShowcaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

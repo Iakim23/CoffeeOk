@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RegistrationView: View {
     @EnvironmentObject var viewModel: AppViewModel
-    @Binding var showRegistration: Bool
     @State private var name = ""
     @State private var email = ""
     @State private var password = ""
@@ -18,9 +17,7 @@ struct RegistrationView: View {
     @State private var showConfirmPassword = false
     @State private var isAgreed = false
     
-    init(showRegistration: Binding<Bool> = .constant(false)) {
-        _showRegistration = showRegistration
-    }
+    init() {}
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -117,7 +114,8 @@ struct RegistrationView: View {
                             .foregroundColor(.gray)
                         
                         Button(action: {
-                            showRegistration = false
+                            viewModel.showRegistration = false
+                            viewModel.showRoleSelection = true
                         }) {
                             Text("Войти")
                                 .font(.system(size: 14, weight: .semibold))
@@ -132,7 +130,8 @@ struct RegistrationView: View {
             
             // Кнопка назад
             Button(action: {
-                showRegistration = false
+                viewModel.showRegistration = false
+                viewModel.showRoleSelection = true
             }) {
                 Circle()
                     .fill(Color.black.opacity(0.5))

@@ -14,8 +14,13 @@ struct CoffeeOkApp: App {
     var body: some Scene {
         WindowGroup {
             if viewModel.isAuthenticated {
+                if viewModel.selectedRole == .coffeeShop {
+                    CoffeeShopMainView()
+                        .environmentObject(viewModel)
+                } else {
                 MainView()
                     .environmentObject(viewModel)
+                }
             } else {
                 AuthView()
                     .environmentObject(viewModel)

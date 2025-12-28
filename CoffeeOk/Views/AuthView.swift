@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AuthView: View {
     @EnvironmentObject var viewModel: AppViewModel
-    @State private var showRegistration = false
     @State private var email = ""
     @State private var password = ""
     @State private var showPassword = false
@@ -17,9 +16,21 @@ struct AuthView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            
-            if showRegistration {
-                RegistrationView(showRegistration: $showRegistration)
+
+            if viewModel.showRoleSelection {
+                RoleSelectionView()
+                    .environmentObject(viewModel)
+            } else if viewModel.showRegistration {
+                RegistrationView(showRegistration: $viewModel.showRegistration)
+                    .environmentObject(viewModel)
+            } else if viewModel.showComingSoon {
+                ComingSoonView()
+                    .environmentObject(viewModel)
+            } else if viewModel.showCoffeeShopRegistration {
+                CoffeeShopRegistrationView()
+                    .environmentObject(viewModel)
+            } else if viewModel.showCoffeeShopMain {
+                CoffeeShopMainView()
                     .environmentObject(viewModel)
             } else {
                 VStack(spacing: 24) {
@@ -76,7 +87,7 @@ struct AuthView: View {
                             .foregroundColor(.gray)
                         
                         Button(action: {
-                            showRegistration = true
+                            viewModel.showRoleSelection = true
                         }) {
                             Text("Зарегистрироваться")
                                 .font(.system(size: 14, weight: .semibold))
